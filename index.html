@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body ng-controller="MainCtrl">
-
+	<div class="container slider">
+		<img ng-repeat="slide in slides" class="slide" ng-src="{{slide.image}}">
+	</div>
     <!-- Navigation -->
     <nav class="navbar" id="page-top">
         <div class="container">
