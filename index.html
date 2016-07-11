@@ -8,7 +8,7 @@
 </head>
 <body ng-controller="MainCtrl">
 	<div class="container slider">
-		<img ng-repeat="slide in slides" class="slide" ng-src="{{slide.image}}">
+		<img ng-repeat="slide in slides" class="slide" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
 	</div>
     <!-- Navigation -->
     <nav class="navbar" id="page-top">
