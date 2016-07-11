@@ -1,32 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="website">
 <head>
   <meta charset="UTF-8">
-	<title>Health Unlocked</title>
-	<script src="lib/angular/angular.min.js"></script>
-	<script src="lib/angular/angular-route.min.js"></script>
-	<script src="lib/angular/angular-animate.min.js"></script>
-
-	<script src="js/app.js"></script>
-	<script src="js/controllers.js"></script>
+	<title>Melissa Wimberly</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<header>
-		<div id="heading">
-			<h1 id="title">Health Unlocked</h1>
-			<h3 id="slogan">Unlike the world of health!</h3>
-		</div>
-		<nav>
-			<ul class="navigationBar">
-				<li>Unlock<br>Food</li>
-				<li>Unlock<br>Movement</li>
-				<li>Unlock<br>Breath</li>
-				<li>Unlock<br>Life</li>
-			</ul>
-		</nav>
-	</header>
+<body ng-controller="MainCtrl">
+
+    <!-- Navigation -->
+    <nav class="navbar" id="page-top">
+        <div class="container">
+	        <a class="navbar-brand" href="#page-top">Melissa Wimberly</a>
+	        <ul class="nav navbar-nav navbar-right">
+	            <li><a class="" href="#portfolio">Portfolio</a></li>
+	            <li><a class="" href="#team">About</a></li>
+	            <li><a class="" href="#about">Blog</a></li>
+	            <li><a class="" href="#contact">Contact</a></li>
+	        </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-welcome">Welcome To The Mind of </div>
+                <div class="intro-heading">Melissa Wimberly!</div>
+                <a href="#services" class="page-scroll btn btn-xl">Come Take A Look</a>
+            </div>
+        </div>
+    </header>
 	<div class="main" ng-view></div>
 	</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular/angular-route.min.js"></script>
+<script src="lib/angular/angular-animate.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>	
 </body>
 </html>
+
