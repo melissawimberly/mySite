@@ -60,7 +60,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* Navbar */
 .navbar{
-  background-color: #337ab7;
+    background-color: #337ab7;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }
 .navbar ul{
   float: right;
@@ -68,6 +71,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .navbar li{
   display: inline-block;
 }
+.navbar a{
+  color: white;
+}
+
+/* Carousel */
+#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
+
 
 header{
   background-image: url(../images/paris.jpg);
